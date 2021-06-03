@@ -1,9 +1,10 @@
 import './styles/App.css';
 import './styles/styles.css';
 import { BrowserRouter, Switch, Link, Route } from 'react-router-dom';
-import Footer from './containers/Footer';
 import Profile from './containers/Profile';
 import Learn from './containers/Learn';
+import Coach from './containers/Coach';
+import Account from './containers/Account';
 function App() {
 	return (
 		<div>
@@ -14,13 +15,13 @@ function App() {
 							<Link to="/learn">LEARN</Link>
 						</span>
 						<span>
-							<Link to="/learn">STORIES</Link>
+							<Link to="/coach">COACH</Link>
 						</span>
 						<span>
-							<Link to="/learn">SHOP</Link>
+							<Link to="/account">ACCOUNT</Link>
 						</span>
 						<span>
-							<Link to="/learn">MORE</Link>
+							<Link to="#">MORE</Link>
 						</span>
 					</nav>
 					<div className="personal-header"></div>
@@ -36,14 +37,12 @@ function App() {
 							<Profile />
 						</Route>
 						<Route exact path="/account">
-							<div>
-								<div>Account</div>
-								<Footer />
-							</div>
+							<Account />
 							<Profile />
 						</Route>
 						<Route exact path="/coach">
-							<div>Coach</div>
+							<Coach />
+							<Profile />
 						</Route>
 					</Switch>
 				</section>
