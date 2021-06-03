@@ -1,24 +1,29 @@
 .header {
 	padding: 25px;
 	display: flex;
-	border-bottom: 2px solid rgba(150, 150, 150, 0.72);
-	justify-content: space-around;
+	border-bottom: 2px solid rgb(175, 175, 175);
+	justify-content: center;
 }
 .personal-header {
-	width: 750px;
+	width: 400px;
 }
 .main-links {
-	width: 30vw;
+	width: 775px;
+	padding: 0 20px;
 	display: flex;
 	justify-content: space-between;
 }
 .main-links span a {
-	color: rgba(150, 150, 150, 0.9);
+	color: rgb(175, 175, 175);
 }
+.main-links span a:hover {
+	color: rgb(60, 60, 60);
+}
+
 .main-content {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	padding: 2vh 0;
 }
 .foot {
@@ -27,17 +32,142 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	border-top: 2px solid rgba(150, 150, 150, 0.72);
+	border-top: 2px solid rgb(175, 175, 175);
 	font-size: 15px;
+	letter-spacing: 0.25px;
 }
 .foot span {
-	color: rgba(150, 150, 150, 0.9);
-	cursor: pointer;
+	color: rgb(175, 175, 175);
 	padding: 10px;
+}
+.foot span:hover {
+	cursor: pointer;
+	color: rgb(60, 60, 60);
 }
 .profile {
 	width: 400px;
-	height: 700px;
-	border: 2px solid rgba(150, 150, 150, 0.72);
+	border: 2px solid rgb(175, 175, 175);
 	border-radius: 3%;
+}
+.user-details {
+	padding: 25px;
+	display: flex;
+}
+.user-name {
+	font-size: 24px;
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+.user-profile {
+	color: rgb(28, 175, 247);
+	position: relative;
+	left: 10px;
+	top: 12px;
+	cursor: pointer;
+}
+.user-img {
+	font-size: 21px;
+	color: rgb(175, 175, 175);
+	border: 2px dashed rgb(175, 175, 175);
+	border-radius: 50%;
+	padding: 20px;
+}
+.options {
+	margin-bottom: 10px;
+}
+.options div {
+	margin: 1px 25px;
+	padding: 15px;
+	letter-spacing: 0.25px;
+}
+.options div:hover,
+.options div:active {
+	cursor: pointer;
+	background-color: rgb(218, 218, 218);
+	border-radius: 20px;
+}
+.content {
+	padding: 20px;
+	width: 775px;
+}
+.goal-changes {
+	display: flex;
+	justify-content: space-between;
+}
+.goal-changes div {
+	display: inline-block;
+	font-size: 30px;
+	letter-spacing: 0.25px;
+}
+.learn-section p {
+	color: rgb(175, 175, 175);
+	line-height: 18px;
+}
+.button {
+	box-sizing: border-box;
+	position: relative;
+	top: -18px;
+	padding: 18px;
+	cursor: pointer;
+	color: rgb(175, 175, 175);
+	background-color: rgb(218, 218, 218);
+	border: 2px solid rgb(218, 218, 218);
+	border-radius: 20px;
+}
+.button:hover {
+	color: rgb(75, 75, 75);
+	background-color: none;
+	border: 2px solid rgb(175, 175, 175);
+}
+.img-running {
+	background-image: url('https://d35aaqx5ub95lt.cloudfront.net/images/owls/coach.svg');
+	height: 216px;
+	width: 216px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.goals {
+	margin: 30px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.goals-table {
+	width: 350px;
+}
+.goal {
+	padding: 20px 0px;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid rgb(175, 175, 175);
+	border-top: none;
+}
+.goal:hover {
+	background-color: rgb(221, 244, 255);
+}
+.last {
+	border-bottom: 2px solid rgb(175, 175, 175);
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.first {
+	border-top: 2px solid rgb(175, 175, 175);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.goal-name {
+	padding: 0 20px;
+	font-size: 21px;
+	letter-spacing: 0.25px;
+}
+.xp {
+	padding: 5px 20px;
+	letter-spacing: 0.25px;
+	color: rgb(75, 75, 75);
+	font-weight: 400;
+}
+@media screen and (max-width: 1024px) {
+	.img-running {
+		display: none;
+	}
 }

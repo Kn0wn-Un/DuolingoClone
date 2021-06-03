@@ -3,6 +3,7 @@ import './styles/styles.css';
 import { BrowserRouter, Switch, Link, Route } from 'react-router-dom';
 import Footer from './containers/Footer';
 import Profile from './containers/Profile';
+import Learn from './containers/Learn';
 function App() {
 	return (
 		<div>
@@ -26,11 +27,12 @@ function App() {
 				</section>
 				<section className="main-content">
 					<Switch>
+						<Route exact path="/">
+							<Learn />
+							<Profile />
+						</Route>
 						<Route exact path="/learn">
-							<div>
-								<div>Learn</div>
-								<Footer />
-							</div>
+							<Learn />
 							<Profile />
 						</Route>
 						<Route exact path="/account">
