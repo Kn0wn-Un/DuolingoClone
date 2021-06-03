@@ -1,7 +1,7 @@
 .header {
 	padding: 25px;
 	display: flex;
-	border-bottom: 2px solid rgb(175, 175, 175);
+	border-bottom: 2px solid rgb(218, 218, 218);
 	justify-content: center;
 }
 .personal-header {
@@ -32,7 +32,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	border-top: 2px solid rgb(175, 175, 175);
+	border-top: 2px solid rgb(218, 218, 218);
 	font-size: 15px;
 	letter-spacing: 0.25px;
 }
@@ -47,7 +47,7 @@
 .profile {
 	width: 400px;
 	height: fit-content;
-	border: 2px solid rgb(175, 175, 175);
+	border: 2px solid rgb(218, 218, 218);
 	border-radius: 3%;
 }
 .user-details {
@@ -70,7 +70,7 @@
 .user-img {
 	font-size: 21px;
 	color: rgb(175, 175, 175);
-	border: 2px dashed rgb(175, 175, 175);
+	border: 2px dashed rgb(218, 218, 218);
 	border-radius: 50%;
 	padding: 20px;
 }
@@ -120,6 +120,7 @@
 	color: rgb(75, 75, 75);
 	background-color: none;
 	border: 2px solid rgb(175, 175, 175);
+	transform: scale(1.1);
 }
 .img-running {
 	background-image: url('https://d35aaqx5ub95lt.cloudfront.net/images/owls/coach.svg');
@@ -142,7 +143,7 @@
 	padding: 20px 0;
 	display: flex;
 	justify-content: space-between;
-	border: 2px solid rgb(175, 175, 175);
+	border: 2px solid rgb(218, 218, 218);
 	border-bottom-color: white;
 	position: relative;
 	top: -2px;
@@ -152,12 +153,12 @@
 	border: 2px solid rgb(132, 216, 255);
 }
 .last {
-	border-bottom: 2px solid rgb(175, 175, 175);
+	border-bottom: 2px solid rgb(218, 218, 218);
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
 .first {
-	border-top: 2px solid rgb(175, 175, 175);
+	border-top: 2px solid rgb(218, 218, 218);
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 }
@@ -198,4 +199,73 @@
 	width: 215px;
 	padding: 9px;
 	text-align: right;
+}
+.path {
+	text-align: center;
+	padding: 25px;
+	width: 400px;
+	height: fit-content;
+	margin: 0 auto;
+	border: 2px solid rgb(218, 218, 218);
+	border-radius: 5%;
+}
+.path-choose {
+	font-size: 21px;
+}
+.profile .button {
+	top: 0px;
+	width: 80%;
+	margin: 20px auto;
+	background-color: rgb(28, 176, 246);
+	border: 2px solid rgb(24, 153, 214);
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+.explain {
+	margin-top: 30px;
+	padding: 10px;
+	color: rgb(175, 175, 175);
+}
+.path-select {
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 0;
+}
+.path-select span:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.basics {
+	border-radius: 50%;
+	background-color: rgb(206, 130, 255);
+	color: whitesmoke;
+}
+.placement {
+	border-radius: 50%;
+	background-color: rgb(88, 204, 2);
+	color: whitesmoke;
+}
+.or {
+	position: relative;
+	align-self: center;
+	top: -10px;
+	left: 5px;
+	color: rgb(175, 175, 175);
+}
+.path-icon {
+	font-size: 135px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+.other-paths .path-icon {
+	border-radius: 50%;
+	background-color: rgb(218, 218, 218);
+	color: whitesmoke;
+	margin: 20px 0;
+}
+.other-paths {
+	padding: 20px;
+	text-align: center;
+	cursor: pointer;
 }

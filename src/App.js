@@ -5,6 +5,7 @@ import Profile from './containers/Profile';
 import Learn from './containers/Learn';
 import Coach from './containers/Coach';
 import Account from './containers/Account';
+import CreateProfile from './containers/CreateProfile';
 function App() {
 	return (
 		<div>
@@ -30,11 +31,11 @@ function App() {
 					<Switch>
 						<Route exact path="/">
 							<Learn />
-							<Profile />
+							<CreateProfile />
 						</Route>
 						<Route exact path="/learn">
 							<Learn />
-							<Profile />
+							<CreateProfile />
 						</Route>
 						<Route exact path="/account">
 							<Account />
