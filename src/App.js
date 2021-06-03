@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './styles/App.css';
+import './styles/styles.css';
+import { BrowserRouter, Switch, Link, Route } from 'react-router-dom';
+import Footer from './containers/Footer';
+import Profile from './containers/Profile';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<BrowserRouter>
+				<section className="header">
+					<nav className="main-links">
+						<span>
+							<Link to="/learn">LEARN</Link>
+						</span>
+						<span>
+							<Link to="/learn">STORIES</Link>
+						</span>
+						<span>
+							<Link to="/learn">SHOP</Link>
+						</span>
+						<span>
+							<Link to="/learn">MORE</Link>
+						</span>
+					</nav>
+					<div className="personal-header"></div>
+				</section>
+				<section className="main-content">
+					<Switch>
+						<Route exact path="/learn">
+							<div>
+								<div>Learn</div>
+								<Footer />
+							</div>
+							<Profile />
+						</Route>
+						<Route exact path="/account">
+							<div>
+								<div>Account</div>
+								<Footer />
+							</div>
+							<Profile />
+						</Route>
+						<Route exact path="/coach">
+							<div>Coach</div>
+						</Route>
+					</Switch>
+				</section>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

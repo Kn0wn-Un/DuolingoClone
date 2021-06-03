@@ -1,0 +1,43 @@
+.header {
+	padding: 25px;
+	display: flex;
+	border-bottom: 2px solid rgba(150, 150, 150, 0.72);
+	justify-content: space-around;
+}
+.personal-header {
+	width: 750px;
+}
+.main-links {
+	width: 30vw;
+	display: flex;
+	justify-content: space-between;
+}
+.main-links span a {
+	color: rgba(150, 150, 150, 0.9);
+}
+.main-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 2vh 0;
+}
+.foot {
+	margin-top: 10vh;
+	margin: 10vh 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-top: 2px solid rgba(150, 150, 150, 0.72);
+	font-size: 15px;
+}
+.foot span {
+	color: rgba(150, 150, 150, 0.9);
+	cursor: pointer;
+	padding: 10px;
+}
+.profile {
+	width: 400px;
+	height: 700px;
+	border: 2px solid rgba(150, 150, 150, 0.72);
+	border-radius: 3%;
+}
