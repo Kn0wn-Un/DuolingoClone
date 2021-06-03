@@ -15,7 +15,7 @@ function Learn() {
 						</div>
 						<div>Basics 1</div>
 					</span>
-					<span className="or">OR</span>
+					<div className="or">OR</div>
 					<span>
 						<div className="material-icons-outlined path-icon placement">
 							account_balance

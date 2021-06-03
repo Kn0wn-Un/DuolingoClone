@@ -10,23 +10,60 @@ function App() {
 	return (
 		<div>
 			<BrowserRouter>
-				<section className="header">
+				<header className="header">
 					<nav className="main-links">
 						<span>
-							<Link to="/learn">LEARN</Link>
+							<Link to="/learn">
+								<span className="material-icons-outlined nav-icons">
+									local_library
+								</span>
+								<span className="nav-text">LEARN</span>
+							</Link>
 						</span>
 						<span>
-							<Link to="/coach">COACH</Link>
+							<Link to="/coach">
+								<span className="material-icons-outlined nav-icons">
+									sports
+								</span>
+								<span className="nav-text">COACH</span>
+							</Link>
 						</span>
 						<span>
-							<Link to="/account">ACCOUNT</Link>
+							<Link to="/account">
+								<span className="material-icons-outlined nav-icons">
+									face
+								</span>
+								<span className="nav-text">ACCOUNT</span>
+							</Link>
 						</span>
 						<span>
-							<Link to="#">MORE</Link>
+							<Link to="#">
+								<span className="material-icons-outlined nav-icons">
+									expand_more
+								</span>
+								<span className="nav-text">MORE</span>
+							</Link>
 						</span>
 					</nav>
-					<div className="personal-header"></div>
-				</section>
+					<div className="personal-header">
+						<span className="nav-icons country"> 🇮🇳</span>
+						<span className="material-icons-outlined nav-icons star">
+							star
+						</span>
+						<span className="material-icons-outlined nav-icons streak">
+							whatshot
+						</span>
+						<span className="material-icons-outlined nav-icons collections">
+							category
+						</span>
+						<span
+							className="nav-icons user-img"
+							style={{ padding: '15px', fontSize: '21px' }}
+						>
+							H
+						</span>
+					</div>
+				</header>
 				<section className="main-content">
 					<Switch>
 						<Route exact path="/">

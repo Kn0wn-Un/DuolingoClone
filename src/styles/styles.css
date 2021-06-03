@@ -4,9 +4,6 @@
 	border-bottom: 2px solid rgb(218, 218, 218);
 	justify-content: center;
 }
-.personal-header {
-	width: 400px;
-}
 .main-links {
 	width: 775px;
 	padding: 0 20px;
@@ -19,7 +16,6 @@
 .main-links span a:hover {
 	color: rgb(60, 60, 60);
 }
-
 .main-content {
 	display: flex;
 	flex-direction: row;
@@ -117,9 +113,9 @@
 	border-radius: 20px;
 }
 .button:hover {
-	color: rgb(75, 75, 75);
-	background-color: none;
-	border: 2px solid rgb(175, 175, 175);
+	color: whitesmoke;
+	background-color: rgb(28, 176, 246);
+	border: 2px solid rgb(24, 153, 214);
 	transform: scale(1.1);
 }
 .img-running {
@@ -173,11 +169,7 @@
 	color: rgb(75, 75, 75);
 	font-weight: 400;
 }
-@media screen and (max-width: 1024px) {
-	.img-running {
-		display: none;
-	}
-}
+
 .settings {
 	margin-right: 20px;
 }
@@ -222,6 +214,10 @@
 	text-align: center;
 	font-size: 18px;
 }
+.profile .login {
+	background-color: rgb(117, 205, 142);
+	border: 2px solid rgb(100, 175, 120);
+}
 .explain {
 	margin-top: 30px;
 	padding: 10px;
@@ -250,8 +246,12 @@
 	position: relative;
 	align-self: center;
 	top: -10px;
-	left: 5px;
+	left: 3px;
 	color: rgb(175, 175, 175);
+}
+.or:hover {
+	transform: none;
+	cursor: default;
 }
 .path-icon {
 	font-size: 135px;
@@ -268,4 +268,37 @@
 	padding: 20px;
 	text-align: center;
 	cursor: pointer;
+}
+.nav-icons {
+	font-size: 40px;
+	cursor: pointer;
+}
+.nav-text {
+	position: relative;
+	top: -12px;
+	left: 3px;
+}
+.personal-header {
+	width: 400px;
+	padding-left: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.country {
+	font-size: 50px;
+}
+.star {
+	color: rgb(250, 188, 2);
+}
+.streak {
+	color: rgb(253, 83, 8);
+}
+.collections {
+	color: rgb(254, 39, 18);
+}
+@media screen and (max-width: 1024px) {
+	.img-running,
+	.nav-icons {
+		display: none;
+	}
 }
